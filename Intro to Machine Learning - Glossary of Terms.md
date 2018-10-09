@@ -1,4 +1,4 @@
-# Tech Talent South - Introduction to Machine Learning
+Tech Talent South - Introduction to Machine Learning
 
 ## Glossary of Terms
 
@@ -55,4 +55,26 @@ Notice how much slower the learning is as the epochs get higher. It starts to go
   ![SVC_underfitting](imgs\SVC_underfitting.PNG)
 
 
+
+### <u>Class 3 - Classification</u>
+
+**decision tree** - a class of algorithms that accomplishes classification via a series of splits of the dataset. At each *node*, the data is split along two *branches*, creating *leaves*. The algorithm is capable of automatically splitting the data according to which split maximizes its *information gain*, which is measured either by *entropy* or *Gini impurity* (usually).
+
+![Image result for decision tree](http://www.cellstrat.com/wp-content/uploads/2017/11/Decision-Trees-3.png)
+
+**random forest (or jungle!)** - an example of so-called *ensemble learning*, the random forest is an aggregation of randomized decision trees that vote together to classify a piece of data. The algorithm proceeds by instantiating a random decision tree, then training that tree via traditional decision tree methodologies. It then does this *n* times, which is a parameter set by the machine learning practitioner. Finally, all n trees get to vote on how they would classify a data entry, then the simple majority wins.
+
+![Image result for random forest](https://cdn-images-1.medium.com/max/592/1*i0o8mjFfCn-uD79-F1Cqkw.png)
+
+### <u>Class 4 - Clustering</u>
+
+**clustering** - an unsupervised learning process, where similar data points are grouped together in the hopes of extracting useful insight. Typically, one wants to *standardize* the data before undertaking a clustering algorithm, then remap it to its *principal components*, the two coordinates that maximize the spread of the dataset. One can accomplish this with Principal Component Analysis.
+
+**hierarchical clustering** - an unsupervised learning algorithm that clusters by grouping data points into increasingly more granular groupings, forming a hierarchy. This hierarchy is modeled by a *dendrogram*.
+
+![Image result for hierarchical clustering](http://www.sthda.com/english/sthda-upload/figures/cluster-analysis/009c-divisive-hierarchical-clustering-compute-diana-1.png)
+
+**K-Means Clustering** - a clustering algorithm that works by assigning a data point to the nearest *centroid*. The centroids are instantiated and moved with each iteration of the algorithm to create the most consistent groups. The choice of k (the number of centroids), and where you start the centroids matter a great deal to how the algorithm converges. Typically, one uses a process called *k-means++* to instantiate centroids.
+
+![Starting with 4 random points in one cluster](http://shabal.in/visuals/kmeans/random.gif)
 
